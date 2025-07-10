@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #ef90ca, #83c1f1, #d279f0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .wrapper {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .player-card {
+    position: relative;
+    background: linear-gradient(to right, #6a1f92, #15698e, #931788);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+    opacity: 50%;
+  }
+  
+  .song-info {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .song-info h2,
+  .song-info h4 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  .song-info h4 {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .controls {
+    z-index: 1;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls button:hover {
+    transform: scale(1.2);
+  }
+  
+  #progress {
+    width: 100%;
+    margin: 15px 0;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    color: white;
+  }
+  
+  #volume {
+    width: 70%;
+  }
+  
+  .upload-card,
+  .playlist-card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    opacity: 50%;
+  }
+  
+  .library {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .playlist-card {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  li:hover {
+    background: #ee9eda;
+  }
+  
+
+  
